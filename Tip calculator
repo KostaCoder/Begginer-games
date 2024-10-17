@@ -1,0 +1,32 @@
+print("Welcome to the tip calculator.")
+while True:
+    bill = float(input("What was the total bill? $"))
+    tax = int(input("How much tip would you like to give? 10, 15 or 12: "))
+    numPeople = int(input("How many people will split the bill?"))
+    if tax in [10,12,15]:
+        if tax == 10:
+            dollars = round((bill/numPeople)*1.10, 2)
+            print(f"Each should give {dollars}")
+            break
+        elif tax == 12:
+            dollars = round((bill/numPeople)*1.12,2)
+            print(f"Each should give {dollars}")
+            break
+        else:
+            dollars = round((bill/numPeople)*1.15,2)
+            print(f"Each should give ${dollars}")
+            break
+    else:
+        print("Invalix tax number")
+
+#without if
+"""
+print("Welcome to the tip calculator!!")
+bill = float(input("What was the total bill in US$? $"))
+tip = int(input("How much tip would you like to give? 10, 12 or 15: "))
+num_people = int(input("How many people will split/share the bill? "))
+
+tip_in_percent = tip/100
+tip_total_amount = bill * tip_in_percent
+bill_total_amount = round((bill + tip_total_amount)/num_people, 2)
+print(f"Each should give ${bill_total_amount}") """
