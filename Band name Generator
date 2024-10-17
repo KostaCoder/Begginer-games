@@ -3,6 +3,6 @@ city = input("What is name of the city you grow up in:")
 pet = input("What is name of the pet you had:")
 print("Your band name could be: ", pet, city)"""
 
-"""num_char = len(input("What s your name?"))
+num_char = len(input("What s your name?"))
 new_num_char = str(num_char)
 print("Your name has " + new_num_char + " characters.")
